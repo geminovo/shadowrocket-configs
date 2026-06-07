@@ -12,6 +12,13 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.2.0] - 2026-06-07
+
+### Fixed
+- Added `raw.githubusercontent.com` to `skip-proxy` — prevents VPN interference when Shadowrocket auto-updates config
+
+---
+
 ## [1.1.0] - 2026-06-07
 
 ### Changed
