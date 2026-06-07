@@ -39,10 +39,6 @@
   Use Shadowrocket SSID rules to load different configs at home vs outside.
   Useful if DNS strategy differs by network.
 
-- [ ] **Separate streaming ruleset**
-  Extract Netflix / Disney+ / YouTube rules into dedicated proxy group.
-  Allows independent proxy selection for streaming vs AI.
-
 ---
 
 ## Decisions Log
@@ -52,3 +48,4 @@
 | 2026-06-07 | Removed `hijack-dns` | Was overriding AdGuard Home DNS responses |
 | 2026-06-07 | `dns-server = system` | Let router DHCP control DNS per network environment |
 | 2026-06-07 | Deferred Tailscale | iOS VPN conflict risk with Shadowrocket |
+| 2026-06-07 | Removed streaming ruleset | Not a planned feature |
