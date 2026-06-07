@@ -8,7 +8,6 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## [Unreleased]
 
 - AdGuard Home DoH external exposure (see ROADMAP.md P1)
-- Additional AI domain rules (Gemini, Perplexity, Grok)
 
 ---
 
