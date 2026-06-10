@@ -11,10 +11,36 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.2.3] - 2026-06-11
+
+### Fixed
+- Added `bypass-system = true` — system-level traffic (APNs, NTP, iCloud) now routes through TUN, preventing carrier DNS exposure on cellular
+- Removed `raw.githubusercontent.com` from `skip-proxy` — was bypassing Shadowrocket entirely, causing DNS queries to leak to system resolver
+
+---
+
+## [1.2.2] - 2026-06-11
+
+### Fixed
+- Merged `fallback-dns-server` into `dns-server` as parallel entries — eliminates timeout delay when roaming and `192.168.50.16` is unreachable
+
+### Removed
+- `fallback-dns-server` directive (consolidated into `dns-server`)
+
+---
+
+## [1.2.1] - 2026-06-11
+
+### Added
+- `DOMAIN,openaiassets.blob.core.windows.net,AI` — OpenAI Azure CDN domain missing from rules, was leaking to AdGuard/DIRECT
+
+---
+
 ## [1.2.0] - 2026-06-07
 
 ### Fixed
 - Added `raw.githubusercontent.com` to `skip-proxy` — prevents VPN interference when Shadowrocket auto-updates config
+  *(reverted in 1.2.3 — skip-proxy bypasses DNS entirely, causing system resolver leak)*
 
 ---
 
